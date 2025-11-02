@@ -7,12 +7,11 @@ enum class Messages(val message: String) {
     INPUT_THE_BONUS_NUMBER("보너스 번호를 입력해 주세요."),
     WINNING_STATISTICS("당첨통계"),
     DIVIDING_LINE("---"),
-    MESSAGE_THREE_MATCHES("3개 일치 (5,000원) - "),
-    MESSAGE_FOUR_MATCHES("4개 일치 (50,000원) - "),
-    MESSAGE_FIVE_MATCHES("5개 일치 (1,500,000원) - "),
-    MESSAGE_FIVE_AND_BONUS_MATCHES("5개 일치, 보너스 볼 일치 (30,000,000원) - "),
-    MESSAGE_SIX_MATCHES("6개 일치 (2,000,000,000원) - "),
+    MESSAGE_THREE_MATCHES("3개 일치 (5,000원) - %d개"),
+    MESSAGE_FOUR_MATCHES("4개 일치 (50,000원) - %d개"),
+    MESSAGE_FIVE_MATCHES("5개 일치 (1,500,000원) - %d개"),
+    MESSAGE_FIVE_AND_BONUS_MATCHES("5개 일치, 보너스 볼 일치 (30,000,000원) - %d개"),
+    MESSAGE_SIX_MATCHES("6개 일치 (2,000,000,000원) - %d개"),
     TOTAL_PROFIT_GUIDANCE("총 수익률은 %d%입니다."),
-    MESSAGE_THE_NUMBER("%d개"),
     NUMBER_OF_ZERO("0")
 }

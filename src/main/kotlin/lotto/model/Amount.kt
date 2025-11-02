@@ -1,11 +1,12 @@
 package lotto.model
 
-data class Amount(
-    val money: Int
-) {
+import lotto.common.ErrorMessages
+import lotto.common.LottoConstants
 
-    fun getTime(): Int {
-        return money / 1000
+class Amount( val amount: Int){
+    init {
+        require(amount > LottoConstants.ZERO) { ErrorMessages.INVALID_AMOUNT_OF_PURCHASE.message }
+        require(amount % LottoConstants.PURCHASE_UNIT == LottoConstants.ZERO) { ErrorMessages.NOT_THOUSAND_WON_UNIT.message }
     }
 
 }
