@@ -1,5 +1,6 @@
 package lotto
 
+import lotto.model.Lotto
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertThrows
 
@@ -20,4 +21,20 @@ class LottoTest {
     }
 
     // TODO: 추가 기능 구현에 따른 테스트 코드 작성
+    @Test
+    fun `로또 번호에 0이 들어간 경우`() {
+        assertThrows<IllegalArgumentException> {
+            Lotto(listOf(0, 2, 3, 4, 5, 6))
+        }
+    }
+
+    @Test
+    fun `로또 번호가 비어있는 경우`() {
+        assertThrows<IllegalArgumentException> {
+            Lotto(listOf())
+        }
+    }
+
+
+
 }
