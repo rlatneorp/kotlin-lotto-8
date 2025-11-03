@@ -1,10 +1,13 @@
 package lotto
 
 import lotto.controller.Controller
+import lotto.service.LottoService
+import lotto.service.StatisticsService
 
 fun main() {
-    // TODO: 프로그램 구현
-    val controller = Controller()
+    val lottoMachine = LottoService()
+    val statisticsCalculator = StatisticsService()
+    val controller = Controller(lottoMachine, statisticsCalculator)
     controller.run()
 }
 
