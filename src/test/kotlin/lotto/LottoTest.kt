@@ -1,6 +1,7 @@
 package lotto
 
 import lotto.model.Lotto
+import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertThrows
 
@@ -35,6 +36,11 @@ class LottoTest {
         }
     }
 
-
-
+    @Test
+    fun `번호를 오름차순으로 정렬하여 반환`() {
+        val numbers = listOf(6, 5, 4, 3, 2, 1)
+        val lotto = Lotto(numbers)
+        val sortedNumbers = lotto.getSortedNumbers()
+        assertThat(sortedNumbers).isEqualTo(listOf(1, 2, 3, 4, 5, 6))
+    }
 }
