@@ -12,7 +12,16 @@ class Lotto(private val numbers: List<Int>) {
     }
     // TODO: 추가 기능 구현
 
-    fun getMatchCount(winningNumbers: List<Int>): Int {
-        return winningNumbers.count { numbers.contains(it) }
+    fun getMatchCount(goalNumbers: List<Int>): Int {
+        return this.numbers.count { goalNumbers.contains(it) }
     }
+
+    fun calculationNumber(number: Int): Boolean {
+        return numbers.contains(number)
+    }
+
+    fun getSortedNumbers(): List<Int> {
+        return numbers.sorted()
+    }
+
 }

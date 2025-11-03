@@ -10,12 +10,12 @@ object InputView {
     }
 
     fun getLottoNumber(): String {
-        println(Messages.INPUT_THE_WINNING_NUMBER.message)
+        println("\n${Messages.INPUT_THE_WINNING_NUMBER.message}")
         return Console.readLine()
     }
 
     fun getBonusNumber(): String {
-        println(Messages.INPUT_THE_BONUS_NUMBER.message)
+        println("\n${Messages.INPUT_THE_BONUS_NUMBER.message}")
         return Console.readLine()
     }
 

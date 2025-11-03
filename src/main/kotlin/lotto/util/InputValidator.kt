@@ -16,8 +16,14 @@ object InputValidator {
     }
 
     private fun validateEmptyNumber(input: String) {
-        if (input.isEmpty()) {
+        if (input.isBlank()) {
             throw IllegalArgumentException(ErrorMessages.EMPTY_NUMBER.message)
+        }
+    }
+
+    fun validateLottoFormat(input: String) {
+        if (!input.contains(",")) {
+            throw IllegalArgumentException(ErrorMessages.INVALID_LOTTO_NUMBER_FORMAT.message)
         }
     }
 }
