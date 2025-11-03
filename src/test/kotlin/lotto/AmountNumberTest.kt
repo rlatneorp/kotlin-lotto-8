@@ -18,4 +18,18 @@ class AmountNumberTest() {
             Amount("1000원".toInt())
         }
     }
+
+    @Test
+    fun `구매 금액이 0일 경우`() {
+        assertThrows<IllegalArgumentException> {
+            Amount(0)
+        }
+    }
+
+    @Test
+    fun `로또구매 금액이 1000원 단위가 아닌 경우`() {
+        assertThrows<IllegalArgumentException> {
+            Amount(1111)
+        }
+    }
 }
