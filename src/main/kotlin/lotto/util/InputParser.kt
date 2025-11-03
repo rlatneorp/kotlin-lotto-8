@@ -1,5 +1,6 @@
 package lotto.util
 
+import lotto.model.RandomNumbers
 import kotlin.collections.filter
 import kotlin.text.isNotBlank
 
@@ -14,4 +15,5 @@ object InputParser {
             .filter { it.isNotBlank() }
             .map { it.toInt() }
     }
+
 }

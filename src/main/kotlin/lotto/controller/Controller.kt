@@ -37,4 +37,9 @@ class Controller {
         val bonusParser = InputParser.parseNumber(inputBonus)
         return Bonus(bonusParser)
     }
+
+    fun getPrizeNumber(): Int {
+        getMatchCount
+
+    }
 }

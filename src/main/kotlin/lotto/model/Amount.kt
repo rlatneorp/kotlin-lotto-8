@@ -9,6 +9,7 @@ class Amount(val amount: Int) {
         require(amount % LottoConstants.PURCHASE_UNIT == LottoConstants.ZERO) { ErrorMessages.NOT_THOUSAND_WON_UNIT.message }
     }
 
-
-
+    fun getCount(): Int {
+        return amount / LottoConstants.PURCHASE_UNIT
+    }
 }
