@@ -14,4 +14,9 @@ object InputView {
         return Console.readLine()
     }
 
+    fun getBonusNumber(): String {
+        println(Messages.INPUT_THE_BONUS_NUMBER.message)
+        return Console.readLine()
+    }
+
 }

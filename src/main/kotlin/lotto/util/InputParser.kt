@@ -1,12 +1,11 @@
 package lotto.util
 
-import lotto.common.LottoConstants
 import kotlin.collections.filter
 import kotlin.text.isNotBlank
 
 object InputParser {
 
-    fun parseAmount(input: String): Int {
+    fun parseNumber(input: String): Int {
         return input.toInt()
     }
 
