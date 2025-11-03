@@ -5,7 +5,6 @@ import lotto.model.Lotto
 import lotto.model.Amount
 import lotto.model.Bonus
 import lotto.model.Goal
-import lotto.model.Statistics
 import lotto.service.LottoService
 import lotto.service.StatisticsService
 import lotto.util.InputParser

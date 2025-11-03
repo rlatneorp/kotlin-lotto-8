@@ -17,7 +17,6 @@ object OutputView {
     fun printStatistics(statistics: Statistics) {
         println("\n${Messages.WINNING_STATISTICS.message}")
         println(Messages.DIVIDING_LINE.message)
-
         Rank.entries.toTypedArray().reversedArray().filter { it != Rank.NONE }.forEach { rank ->
             val count = statistics.results[rank] ?: 0
             val messageFormat = getMessage(rank)
