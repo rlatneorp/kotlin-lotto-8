@@ -1,7 +1,7 @@
 package lotto.common
 
 enum class ErrorMessages(val message: String) {
-    EMPTY_AMOUNT_NUMBER("[ERROR] 로또 구매 금액에 공백이 들어갈 수 없습니다"),
+    EMPTY_NUMBER("[ERROR] 공백이 들어갈 수 없습니다"),
     NOT_THOUSAND_WON_UNIT("[ERROR] 로또 구매 금액은 1000원 단위로 입력해주세요."),
     INVALID_AMOUNT_OF_PURCHASE("[ERROR] 구매 금액은 0원일 수 없습니다."),
     INVALID_AMOUNT_OF_PURCHASE_TYPE("[ERROR] 구매 금액에 문자를 입력할 수 없습니다."),

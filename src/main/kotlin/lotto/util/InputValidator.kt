@@ -17,7 +17,7 @@ object InputValidator {
 
     private fun validateEmptyNumber(input: String) {
         if (input.isEmpty()) {
-            throw IllegalArgumentException(ErrorMessages.EMPTY_AMOUNT_NUMBER.message)
+            throw IllegalArgumentException(ErrorMessages.EMPTY_NUMBER.message)
         }
     }
 }
